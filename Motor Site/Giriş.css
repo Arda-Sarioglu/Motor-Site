@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(IMG/arkaplan.png);
+    background-size: cover; 
+}
+.header{
+    width: 1348px;
+    height: 150px;
+    background: transparent;
+    background-color: rgba(172, 172, 172, 0.658);
+    padding-bottom: 50px;
+}
+
+
+.navbar {
+    margin-left: 490px;
+}
+
+.search{
+margin-left: 20px;
+}
+
+.logo{
+    padding-top: 30px;
+    margin-right: 450px;
+    width: 100px;
+    height: 70px;
+}
+
+
+
+/*Giriş sayfasında  genel arka plan ayarları */
+body{
+    background-color: #f0f2f5;
+    margin: 0;;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/*Giriş ekranı doş çerçevesi ayarları*/
+.login-wrapper{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(img/arkaplan.png);
+    background-size: cover;
+}
+.login-card{
+    background-color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+}
+.form-control{
+    border-radius: 8px;
+}
+.btn-primary{
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    font-weight: 600;
+
+}
+.btn-primary:hover{
+    background-color: #0056b3;
+}
+.hide{
+    display: none !important;
+}

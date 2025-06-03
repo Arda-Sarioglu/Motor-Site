@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="icon" href="img/arda-high-resolution-logo-transparent.png" type="image">  
+    <link  rel="stylesheet" href="iletişim.css">
+
+</head>
+<body onload="menuListele(); urunListele();"> <!-- onload: sayfa yüklendikten sonra gerçekleşicek olan işlemleri yaptırır.-->
+    <div class="header">
+        <div class="search"><img src="img/SiteLogo.png" class="logo">
+            <input type="text" class="" placeholder="Arama yap...">
+            <button onclick="searchFunction()">Ara</button>
+        </div>
+        <body onload="menuListele(); urunListele();"> <!-- onload: sayfa yüklendikten sonra gerçekleşicek olan işlemleri yaptırır.-->
+            <nav class="navbar navbar-expand-lg navbar-dark" >
+                <div class="container-fluid">
+                  <!-- navbar togger: bootstrapta menü düğmesi için stiller uygular. Örnekte kullanılan butonda ise aç/kapa düğmesi olarak işlev yapar.-->
+                  <!--collapse: sayfa üzereindeki her hangi bir içeriğin bir buton yada link aracılığıyla gösterilmesini sağlar. örnekte sepet sayfasının içeriğinin görüntelenmesini sağlar.-->
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav" id="menu">
+                        <a class="nav-link">Anasayfa</a>
+                        <a class="nav-link">Hakkımızda</a>
+                        <a class="nav-link">İletişim</a>
+                        <a href="nav-link">Kategoriler</a>   
+                    </div>
+            
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"  
+                    type="submit" onclick="sepetGoruntule()">🛒    
+                    </button>
+                  </div>
+                </div>
+            </nav>
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Sepet İçeriği</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid"> <div class="row" id="sepetUrunler"></div></div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sepet Boşalt</button>
+          <button type="button" class="btn btn-primary">Ödeme Alanına Git</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="iletişim">
+     <div> 
+    <h2>İletişim Bilgilerimiz</h2>
+    <div class="iletişimiçkısmı">
+    <div>
+      <h5>Adres:</h5>
+      <p>İstanbul Büyükçekmece Tepecik</p>
+    </div>      
+    <div>
+       <h5>Telefon:</h5>
+       <p>+90 0530 148 7017</p>
+    </div>               
+    <div>
+       <h5>E-posta:</h5>
+       <p>ardasarioglu3455@gmail.com</p>
+    </div>              
+    </div>
+  </div>      
+</div>
+</div>
+
+  <footer style="background-color:#333; color:#fff; text-align:center; padding:21px; margin-top: 500px;">
+    <p>&copy; 2025 VortexMoto Tüm hakları saklıdır.</p>
+    <img src="img/KartVizit.png" style="width: 300px; height: 100px;"></footer>
+
+    <script src="iletişim.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

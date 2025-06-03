@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(IMG/arkaplan.png);
+    background-size: cover; 
+}
+.header{
+    width: 1348px;
+    height: 150px; 
+    background: transparent;
+    background-color: rgba(172, 172, 172, 0.658);
+    padding-bottom: 50px;
+
+}
+
+
+.navbar {
+    margin-left: 450px;
+}
+
+#urunler{
+    margin-left: 50px;
+    margin-top: 50px;
+}
+.search{
+margin-left: 20px;
+}
+
+.logo{
+    padding-top: 30px;
+    margin-right: 450px;
+    width: 100px;
+    height: 70px;
+}
+img{
+    height: 200px;
+}
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 590vh;
+  }
+
+  .content {
+    flex: 1;
+    padding: 20px;
+  }
+
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+
+
+  .dropdown-item:hover {
+    background-color: #e9ecef;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+  }
